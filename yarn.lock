@@ -1153,9 +1153,11 @@ growl@1.9.2:
   version "1.9.2"
   resolved "http://registry.npm.taobao.org/growl/download/growl-1.9.2.tgz#0ea7743715db8d8de2c5ede1775e1b45ac85c02f"
 
-gz-util-tool-tpl:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/gz-util-tool-tpl/-/gz-util-tool-tpl-1.0.7.tgz#fec390f44f7c98c7b5a587f917b32b2f6fc98a4a"
+gz-util-tool-tpl@1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/gz-util-tool-tpl/-/gz-util-tool-tpl-1.0.8.tgz#6e800ffab706af0ea5db598974f3cd8ec0776c5c"
+  dependencies:
+    chai "^3.5.0"
 
 har-validator@~2.0.6:
   version "2.0.6"

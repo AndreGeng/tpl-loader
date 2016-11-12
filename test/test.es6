@@ -7,7 +7,7 @@ describe('tpl-loader', function() {
       <%= it %>
     </div>`;
     var data = 'test';
-    tplLoader(templateStr).should.to.be.a('string');
-    eval(tplLoader(templateStr).replace(/\s*module.exports\s*=\s*([\s\S]*);$/, `($1)('${data}');`)).should.to.contain(data);
+    tplLoader.call({cacheable: ()=>{}}, templateStr).should.to.be.a('string');
+    eval(tplLoader.call({cacheable: ()=>{}}, templateStr).replace(/\s*module.exports\s*=\s*([\s\S]*);$/, `($1)('${data}');`)).should.to.contain(data);
   });
 });

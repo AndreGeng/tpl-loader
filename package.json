@@ -1,5 +1,5 @@
 {
-  "name": "tpl-loader",
+  "name": "gz-tpl-loader",
   "version": "1.0.0",
   "main": "./dist/index.js",
   "author": "Andre Geng",

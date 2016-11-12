@@ -1,0 +1,26 @@
+{
+  "name": "tpl-loader",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "author": "Andre Geng",
+  "license": "MIT",
+  "dependencies": {
+    "util-tool-tpl": "^1.0.6"
+  },
+  "scripts": {
+    "test": "mocha --compilers es6:babel-core/register ./test/test.es6",
+    "clean": "rm -r ./dist",
+    "build": "babel ./src --out-dir dist",
+    "prepublish": "npm run clean && npm run build"
+  },
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
+    "babel-preset-es2015": "^6.18.0",
+    "loader-utils": "^0.2.16",
+    "mocha": "^3.1.2",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2",
+    "chai": "^3.5.0"
+  }
+}
